@@ -8,7 +8,10 @@
 </head>
 <body>
 
-    <h1>Clinic AI Agent</h1>
+    <div class="header">
+        <h1>Clinic AI Agent</h1>
+        <p>Your personal assistant for finding the best clinics</p>
+    </div>
 
     <!-- Chat Interface -->
     <div class="chat-container" id="chat-box">
@@ -19,6 +22,10 @@
     <div class="input-container">
         <input type="text" id="user-input" placeholder="Type your message here...">
         <button id="send-btn">Send</button>
+    </div>
+
+    <div class="footer">
+        <p>Powered by <a href="#">MedYatra</a></p>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

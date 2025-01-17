@@ -1,6 +1,7 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,64 +13,147 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px #aaa;
+    font-weight: 700;
 }
 
+/* Chat Container */
 .chat-container {
-    width: 80%;
-    max-width: 600px;
-    height: 400px;
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow-y: auto;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
+.chat-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Container */
 .input-container {
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 800px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 #user-input {
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#user-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 #send-btn {
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 1px solid #ccc;
     border-left: none;
     background-color: #007bff;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
     cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 #send-btn:hover {
     background-color: #0056b3;
 }
 
+/* Message Styles */
 .message {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
 }
 
 .message strong {
     display: block;
     margin-bottom: 5px;
+    font-size: 1.1em;
 }
 
+.message:hover {
+    background-color: #e1e1e1;
+}
+
+/* Clinic Styles */
 .clinic {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.clinic:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clinic strong {
+    font-size: 1.2em;
+    color: #333;
 }
 
 .clinic .rating {
     color: green;
+    font-weight: bold;
 }
 
 .clinic .reviews {
     color: blue;
+    font-weight: bold;
+}
+
+/* Additional Styling */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
