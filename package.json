@@ -2,6 +2,7 @@
   "name": "medyatra-logic-implementation",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,6 +13,9 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.78.1",
+    "socket.io": "^4.8.1",
     "sqlite3": "^5.1.7"
   }
 }

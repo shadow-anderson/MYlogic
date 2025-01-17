@@ -3,35 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinic Search</title>
+    <title>Clinic AI Agent</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Clinic Search Portal</h1>
+    <h1>Clinic AI Agent</h1>
 
-    <!-- Search Bar and Dropdown -->
-    <div class="search-container">
-        <select id="treatment-dropdown">
-            <option value="dendata" selected>Dental Treatment</option>
-            <option value="ivfdata">IVF Treatment</option>
-            <option value="hairdata">Hair Transplant Treatment</option>
-            <option value="cosdata">Cosmetic Treatment</option>
-        </select>
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chat-box">
+        <!-- Chat messages will be displayed here -->
     </div>
 
-    <!-- Table to Display Results -->
-    <table id="clinic-table">
-        <thead>
-            <tr>
-                <th>Clinic Name</th>
-            </tr>
-        </thead>
-        <tbody id="table-body">
-            <!-- Data will be inserted here dynamically -->
-        </tbody>
-    </table>
+    <!-- Input Field -->
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button id="send-btn">Send</button>
+    </div>
 
+    <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

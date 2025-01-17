@@ -1,40 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-}
-
-.search-container {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-#treatment-dropdown {
-    padding: 10px;
-    font-size: 16px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
+.chat-container {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #fff;
     border: 1px solid #ccc;
-}
-
-th, td {
+    border-radius: 5px;
+    overflow-y: auto;
     padding: 10px;
-    text-align: left;
+    margin-bottom: 20px;
 }
 
-th {
-    background-color: #f2f2f2;
+.input-container {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.clinic {
+    margin-bottom: 10px;
+}
+
+.clinic .rating {
+    color: green;
+}
+
+.clinic .reviews {
+    color: blue;
 }
